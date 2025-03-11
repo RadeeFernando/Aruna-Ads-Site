@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE-edge">
+    <link rel="stylesheet" href="Styles-printing.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" 
+    integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aruna Ads</title>
+</head>
+<body>
+    <header>
+
+        <div class="navbar">
+            <div class="logo">
+                <a href="">ARUNA ADS</a>
+            </div>
+
+            <ul class="tabs">
+                <li><a href="main.html">Home</a></li>
+                <li><a href="about-us.html">About us</a></li>
+                <li><a href="cnc-cutting.html">CNC Cutting</a></li>
+                <li><a href="printing.html">Printing</a></li>
+            </ul>
+            <a href="#" class="contact-us">Contact us</a>
+            <div class="toggle-btn">
+                <i class="fa-solid fa-bars"></i>
+            </div>
+
+            
+    
+        </div>
+
+        <div class="dropdown-menu">
+            <li><a href="main.html">Home</a></li>
+            <li><a href="about-us.html">About us</a></li>
+            <li><a href="cnc-cutting.html">CNC Cutting</a></li>
+            <li><a href="printing.html">Printing</a></li>
+            <li><a href="#" class="contact-us">Contact us</a></li>
+        </div>
+
+    </header>
+
+    <div class="cnc-tit-group">
+        <h1>Digital Printing</h1>
+        <p>Digital printing is a modern, fast, and cost-effective method of producing high-quality prints directly from a digital file. Unlike traditional printing methods,
+             such as offset printing, digital printing skips the need for physical printing plates, making it ideal for both small and large print runs. With its precise color
+              reproduction and rapid turnaround times, digital printing has become the preferred choice for a wide variety of applications, including marketing materials, promotional items,
+              custom products, and more.</p>
+        <ul>
+            <li><p>~ <b>High Quality:</b> Digital printing delivers sharp, vibrant colors with exceptional detail, ensuring your materials look professional and stand out.</p></li>
+
+            <li><p>~ <b>Cost-Effective:</b> No setup fees, plates, or time-consuming processes make digital printing a more affordable solution, especially for short runs or custom jobs.</p></li>
+
+            <li><p>~ <b>Fast Turnaround:</b> With fewer steps involved in the process, digital printing offers quicker production times, making it perfect for projects that require fast delivery.</p></li>
+
+            <li><p>~ <b>Customization:</b> Digital printing allows for easy personalization, whether it's changing text, images, or designs across different copies.</p></li>
+            
+            <li><p>~ <b>Environmentally Friendly:</b> Because digital printing uses less ink and fewer resources, it's a more sustainable option compared to traditional printing methods.</p></li>
+        </ul>
+        <p>From business cards and brochures to banners and signage, digital printing
+            provides a versatile and efficient solution for any print 
+            project. Experience the future of printing with cutting-edge 
+            technology that brings your designs to life with clarity and 
+            precision.</p>
+    </div>
+    
+    <div class="print-cat">
+        <div class="wrapper">
+            <div class="card-area">
+                <div class="card">
+                    <img src="media/t.jpg" alt="">
+                    <div class="overlay">
+                        <h3>T-shirt printing</h3>
+                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                            Temporibus modi ullam fugit tempore harum nisi accusantium
+                            placeat laboriosam, ipsum non quidem eos est, praesentium 
+                            quia rem eum provident explicabo adipisci!</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="media/mug.jpg" alt="">
+                    <div class="overlay">
+                        <h3>Mug Printing</h3>
+                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                            Temporibus modi ullam fugit tempore harum nisi accusantium
+                            placeat laboriosam, ipsum non quidem eos est, praesentium 
+                            quia rem eum provident explicabo adipisci!</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="media/digital-print01.jpg" alt="">
+                    <div class="overlay">
+                        <h3>Image o1</h3>
+                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                            Temporibus modi ullam fugit tempore harum nisi accusantium
+                            placeat laboriosam, ipsum non quidem eos est, praesentium 
+                            quia rem eum provident explicabo adipisci!</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="bottom">
+        <ul>
+            <li><h3>Contact Us</h3>
+                <h4>Aruna : 077 46 45 500 <br>Iduwara : 075 65 52 280
+                </h4></li>
+            <li><h3>E-mail Us</h3>
+                <h4>arunaads2222@gmail.com</h4></li>
+        </ul>
+
+        <ol>
+            <h5>© 2025 Aruna Ads. All Rights Reserved</h5>
+            <h5>Design and Developed by <a>Menol Radeesha</a></h5>
+        </ol>
+        
+    </div>
+
+   
+    
+    
+    <script>
+        const toggleBtn = document.querySelector('.toggle-btn')
+        const toggleBtnIcon = document.querySelector('.toggle-btn i')
+        const DropDownMenu = document.querySelector('.dropdown-menu')
+
+        toggleBtn.onclick = function () {
+            DropDownMenu.classList.toggle('open')
+            const isOpen = DropDownMenu.classList.contains('open')
+            toggleBtnIcon.classList = isOpen
+            ? 'fa-solid fa-xmark'
+            : 'fa-solid fa-bars'
+        }
+    </script>
+
+</body>
+</html>

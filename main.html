@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE-edge">
+    <link rel="stylesheet" href="Styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" 
+    integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aruna Ads</title>
+</head>
+<body>
+
+    <header>
+
+        <div class="navbar">
+            <div class="logo">
+                <a href="">ARUNA ADS</a>
+            </div>
+
+            <ul class="tabs">
+                <li><a href="main.html">Home</a></li>
+                <li><a href="about-us.html">About us</a></li>
+                <li><a href="cnc-cutting.html">CNC Cutting</a></li>
+                <li><a href="printing.html">Printing</a></li>
+            </ul>
+            <a href="#" class="contact-us">Contact us</a>
+            <div class="toggle-btn">
+                <i class="fa-solid fa-bars"></i>
+            </div>
+
+            
+    
+        </div>
+
+        <div class="dropdown-menu">
+            <li><a href="main.html">Home</a></li>
+            <li><a href="about-us.html">About us</a></li>
+            <li><a href="cnc-cutting.html">CNC Cutting</a></li>
+            <li><a href="printing.html">Printing</a></li>
+            <li><a href="#" class="contact-us">Contact us</a></li>
+        </div>
+
+    </header>
+
+    <main>
+        <section id="hero">
+            <h1>Your Advertising Partner</h1>
+            <p>We' re dedicated to delivering exceptional advertising
+                that make a difference. Founded in 2005, Our goal has<br>
+                always been to provided innovative, reliable and high<br>
+                quality products that meet the need of our customers.
+            </p>
+
+        </section>
+    </main>
+
+    <script>
+        const toggleBtn = document.querySelector('.toggle-btn')
+        const toggleBtnIcon = document.querySelector('.toggle-btn i')
+        const DropDownMenu = document.querySelector('.dropdown-menu')
+
+        toggleBtn.onclick = function () {
+            DropDownMenu.classList.toggle('open')
+            const isOpen = DropDownMenu.classList.contains('open')
+            toggleBtnIcon.classList = isOpen
+            ? 'fa-solid fa-xmark'
+            : 'fa-solid fa-bars'
+        }
+    </script>
+
+
+</body>
+</html>

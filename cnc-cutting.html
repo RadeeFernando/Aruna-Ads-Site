@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE-edge">
+    <link rel="stylesheet" href="Styles-cnc-cutting.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" 
+    integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aruna Ads</title>
+</head>
+<body>
+    <header>
+
+        <div class="navbar">
+            <div class="logo">
+                <a href="">ARUNA ADS</a>
+            </div>
+
+            <ul class="tabs">
+                <li><a href="main.html">Home</a></li>
+                <li><a href="about-us.html">About us</a></li>
+                <li><a href="cnc-cutting.html">CNC Cutting</a></li>
+                <li><a href="printing.html">Printing</a></li>
+            </ul>
+            <a href="#" class="contact-us">Contact us</a>
+            <div class="toggle-btn">
+                <i class="fa-solid fa-bars"></i>
+            </div>
+
+            
+    
+        </div>
+
+        <div class="dropdown-menu">
+            <li><a href="main.html">Home</a></li>
+            <li><a href="about-us.html">About us</a></li>
+            <li><a href="cnc-cutting.html">CNC Cutting</a></li>
+            <li><a href="printing.html">Printing</a></li>
+            <li><a href="#" class="contact-us">Contact us</a></li>
+        </div>
+
+    </header>
+
+    <div class="cnc-tit-group">
+        <h1>CNC CUTTING & ENGRAVING</h1>
+        <p>CNC (Computer Numerical Control) cutting and engraving are
+             advanced manufacturing processes that use computer-controlled machines to
+            precisely cut, carve, or etch materials.</p>
+        <ul>
+            <li><p>~ <b>CNC Cutting</b> involves using a CNC machine equipped with tools like 
+                routers, lasers, or plasma cutters to cut through materials such as 
+                wood, metal, plastic, and composites. The machine follows a pre-programmed 
+                design, ensuring high precision and repeatability for complex shapes, 
+                patterns, and detailed cuts. It’s widely used in industries like aerospace, 
+                automotive, and sign making.</p></li>
+
+            <li><p>~ <b>CNC Engraving</b> is the process of etching or carving intricate designs, text,
+                 or patterns onto the surface of a material. Similar to cutting, CNC engraving 
+                 uses a rotating tool, but instead of cutting through, it typically creates 
+                 shallow grooves or marks. It’s commonly used for adding logos, serial numbers, 
+                 decorative elements, or detailed artwork on items like metal plates, jewelry, 
+                 or wood products.</p></li>
+        </ul>
+        <p>Both processes offer efficiency, high precision, and the ability to create highly
+            intricate designs with minimal human intervention. They are ideal for mass production 
+            as well as custom, one-off creations.</p>
+    </div>
+    
+
+    <div class="top-video">
+        <video autoplay muted loop plays-inline>
+            <source src="media/cnc-cutting.mp4" type="video/mp4">
+        </video>
+    </div>
+
+
+    <div class="bottom">
+        <ul>
+            <li><h3>Contact Us</h3>
+                <h4>Aruna : 077 46 45 500 <br>Iduwara : 075 65 52 280
+                </h4></li>
+            <li><h3>E-mail Us</h3>
+                <h4>arunaads2222@gmail.com</h4></li>
+        </ul>
+
+        <ol>
+            <h5>© 2025 Aruna Ads. All Rights Reserved</h5>
+            <h5>Design and Developed by <a>Menol Radeesha</a></h5>
+        </ol>
+        
+    </div>
+
+   
+    
+    
+    <script>
+        const toggleBtn = document.querySelector('.toggle-btn')
+        const toggleBtnIcon = document.querySelector('.toggle-btn i')
+        const DropDownMenu = document.querySelector('.dropdown-menu')
+
+        toggleBtn.onclick = function () {
+            DropDownMenu.classList.toggle('open')
+            const isOpen = DropDownMenu.classList.contains('open')
+            toggleBtnIcon.classList = isOpen
+            ? 'fa-solid fa-xmark'
+            : 'fa-solid fa-bars'
+        }
+    </script>
+
+</body>
+</html>
